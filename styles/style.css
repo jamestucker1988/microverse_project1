@@ -212,3 +212,77 @@ a {
 .user-names {
     font-size: 0.8rem;
 }
+
+footer {
+    background-color: rgb(236, 230, 230);
+    padding: 20px; 
+    /* width: 100%; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer-container-1 {
+    display: inline-block;
+}
+
+#youtube-logo-footer {
+    margin-top: 1rem;
+}
+
+.footer-buttons {
+    padding: 0.3rem;
+    background-color: rgb(219, 211, 211);
+    border: none;
+}
+
+.history-and-help-icons {
+    width: 1rem;
+    height: -0.5rem;
+    color: grey;
+}
+
+.footer-links-top {
+    font-size: 1rem;
+    color: rgb(104, 102, 102);
+    font-weight: bold;
+}
+
+.footer-links-bottom {
+    color: rgb(161, 160, 160);
+}
+
+/* http: //meyerweb.com/eric/tools/css/reset/ 
+
+v2.0 | 20110126 License: none (public domain) */
+html,
+body,
+div,
+span,
+iframe,
+a,
+aside,
+footer,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+aside,
+footer,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
