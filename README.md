@@ -6,6 +6,7 @@ http://archive.vn/Bss88
 
 ## Preview of our webpage
 
+![Preview-1](images/webpage_preview_1.PNG)
 
 ## Built With
 
