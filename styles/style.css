@@ -1,3 +1,218 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    position: relative;
+    padding-bottom: 90px;  /*put the height/width of the footer (see this value in the web browser's Dev tools) in pixels as its value*/
+    min-height: 100vh;  /*vh (viewport height as unit of measure))*/
+}
+
+a {
+     text-decoration: none;
+}
+
+#navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#search-bar {
+    padding: 0.5rem;
+}
+
+#search-button {
+   position: relative;
+   top: 0.4rem;
+   left: -0.25rem;
+   padding: 0.3rem 0.4rem;
+   background-color: lightgrey;
+   box-shadow: none;
+   border: none;
+}
+
+#search-icon {
+    color: grey;
+}
+
+#upload-icon {
+    position: relative;
+    top: 0.5rem;
+}
+
+#sign-in-button {
+    color: white;
+    background-color: rgb(27, 138, 212);
+    padding: 0.7rem;
+    font-weight: bold;
+}
+
+.main-containers {
+    display: inline-block;
+}
+
+#main-container-1 {
+    position: relative;
+    top: -122rem;
+    left: 3rem;
+    margin-left: -0.5rem;
+}
+
+.videotitle-and-info {
+    border-top: 1rem solid rgb(240, 233, 233);
+    border-right: 1rem solid rgb(240, 233, 233);
+    border-bottom: 1rem solid rgb(240, 233, 233);
+    border-left: 0.5rem solid rgb(240, 233, 233);
+}
+
+.youtubername-and-views, .youtuberavatar-and-subscribebutton {
+    display: inline-block;
+}
+
+#youtuber-avatar {
+    margin-bottom: 3rem;
+}
+
+#youtubername-and-subscribebutton {
+    position: relative;
+    top: -2.3rem;
+}
+
+#youtuber-name {
+    font-weight: bold;
+}
+
+.subscribebutton-and-number {
+    display: inline;
+}
+
+#subscribe-button {
+    background-color: red;
+    color: white;
+    border: 0.1rem solid red;
+    padding: 0.4rem;
+}
+
+#number-of-subscribers {
+    border: 0.1rem solid rgb(240, 233, 233);
+    padding: 0.4rem;
+    margin-left: -0.3rem;
+}
+
+#number-of-views {
+    position: relative;
+    right: -30rem;
+    border-bottom: 0.15rem solid rgb(27, 138, 212);
+}
+
+#youtubername-and-views {
+    border-bottom: 0.2rem solid rgb(240, 233, 233);
+}
+
+.videoinfo-container-buttons {
+    display: inline-block;
+    outline: none; 
+    background-color: rgb(240, 233, 233);
+}
+
+#right-video-buttons {
+    position: relative;
+    right: -28rem;
+}
+
+.video-info {
+    color: black;
+    display: block;
+}
+
+#showmore-1 {
+    color: rgb(187, 180, 180);
+    text-align: center;
+    border-top: 0.05rem solid rgb(240, 233, 233);
+    padding-top: 0.6rem;
+}
+
+#number-of-comments {
+    color: rgb(187, 180, 180);
+    font-size: 1.2rem;
+    border-right: 1rem solid rgb(240, 233, 233);
+    border-left: 0.2rem solid rgb(240, 233, 233); 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#user-avatar {
+    margin-bottom: 1rem;
+}
+
+#numberofcomments-and-postingacomment {
+    padding: 2rem;
+    background-color: white;
+    border-right: 1rem solid rgb(240, 233, 233);
+    /* border-bottom: 1rem solid rgb(240, 233, 233);*/
+    border-left: 0.2rem solid rgb(240, 233, 233); 
+}
+
+#post-comment-button {
+    position: relative;
+    top: 1rem;
+    right: 3rem;
+}
+
+#main-container-2 {
+    margin-left: 5rem;
+    background-color: white;
+    /* border-bottom: 1rem solid rgb(240, 233, 233); */
+    /* border-left: 0.1rem solid rgb(240, 233, 233);  */
+    /* border: 0.05rem solid rgb(240, 233, 233); */
+}
+
+#uploadtext-and-autoplayimage {
+    display: inline-block;
+}
+
+.upload-and-autoplay {
+    display: inline-block;
+}
+
+#up-next {
+    color: grey;
+    font-size: 2rem;
+}
+
+#autoplay {
+    position: relative;
+    left: 15rem;
+    top: -3rem;
+}
+
+.recommended-videos {
+    display: inline-block;
+}
+
+.rec-vid-text {
+    position: relative;
+    top: -4rem;
+}
+
+.recommended-videos-text {
+    display: block;
+}
+
+.user-names, .recommendedvideos-views {
+    color: grey;
+}
+
+.user-names {
+    font-size: 0.8rem;
+}
+
 footer {
     background-color: rgb(236, 230, 230);
     padding: 20px; 
@@ -70,3 +285,4 @@ section {
 body {
     line-height: 1;
 }
+
