@@ -1,0 +1,159 @@
+.main-containers {
+    display: inline-block;
+}
+
+#main-container-1 {
+    position: relative;
+    top: -122rem;
+    left: 3rem;
+    margin-left: -0.5rem;
+}
+
+.videotitle-and-info {
+    border-top: 1rem solid rgb(240, 233, 233);
+    border-right: 1rem solid rgb(240, 233, 233);
+    border-bottom: 1rem solid rgb(240, 233, 233);
+    border-left: 0.5rem solid rgb(240, 233, 233);
+}
+
+.youtubername-and-views, .youtuberavatar-and-subscribebutton {
+    display: inline-block;
+}
+
+#youtuber-avatar {
+    margin-bottom: 3rem;
+}
+
+#youtubername-and-subscribebutton {
+    position: relative;
+    top: -2.3rem;
+}
+
+#youtuber-name {
+    font-weight: bold;
+}
+
+.subscribebutton-and-number {
+    display: inline;
+}
+
+#subscribe-button {
+    background-color: red;
+    color: white;
+    border: 0.1rem solid red;
+    padding: 0.4rem;
+}
+
+#number-of-subscribers {
+    border: 0.1rem solid rgb(240, 233, 233);
+    padding: 0.4rem;
+    margin-left: -0.3rem;
+}
+
+#number-of-views {
+    position: relative;
+    right: -30rem;
+    border-bottom: 0.15rem solid rgb(27, 138, 212);
+}
+
+#youtubername-and-views {
+    border-bottom: 0.2rem solid rgb(240, 233, 233);
+}
+
+.videoinfo-container-buttons {
+    display: inline-block;
+    outline: none; 
+    background-color: rgb(240, 233, 233);
+}
+
+#right-video-buttons {
+    position: relative;
+    right: -28rem;
+}
+
+.video-info {
+    color: black;
+    display: block;
+}
+
+#showmore-1 {
+    color: rgb(187, 180, 180);
+    text-align: center;
+    border-top: 0.05rem solid rgb(240, 233, 233);
+    padding-top: 0.6rem;
+}
+
+#number-of-comments {
+    color: rgb(187, 180, 180);
+    font-size: 1.2rem;
+    border-right: 1rem solid rgb(240, 233, 233);
+    border-left: 0.2rem solid rgb(240, 233, 233); 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#user-avatar {
+    margin-bottom: 1rem;
+}
+
+#numberofcomments-and-postingacomment {
+    padding: 2rem;
+    background-color: white;
+    border-right: 1rem solid rgb(240, 233, 233);
+    /* border-bottom: 1rem solid rgb(240, 233, 233);*/
+    border-left: 0.2rem solid rgb(240, 233, 233); 
+}
+
+#post-comment-button {
+    position: relative;
+    top: 1rem;
+    right: 3rem;
+}
+
+#main-container-2 {
+    margin-left: 5rem;
+    background-color: white;
+    /* border-bottom: 1rem solid rgb(240, 233, 233); */
+    /* border-left: 0.1rem solid rgb(240, 233, 233);  */
+    /* border: 0.05rem solid rgb(240, 233, 233); */
+}
+
+#uploadtext-and-autoplayimage {
+    display: inline-block;
+}
+
+.upload-and-autoplay {
+    display: inline-block;
+}
+
+#up-next {
+    color: grey;
+    font-size: 2rem;
+}
+
+#autoplay {
+    position: relative;
+    left: 15rem;
+    top: -3rem;
+}
+
+.recommended-videos {
+    display: inline-block;
+}
+
+.rec-vid-text {
+    position: relative;
+    top: -4rem;
+}
+
+.recommended-videos-text {
+    display: block;
+}
+
+.user-names, .recommendedvideos-views {
+    color: grey;
+}
+
+.user-names {
+    font-size: 0.8rem;
+}
