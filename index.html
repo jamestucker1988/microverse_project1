@@ -1,1 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Link in order to use Google icons (Google apps icon) within the HTML file-->
+        <meta charset="utf-8"/>
+    </head>
 
+    <body>
+        <!--Navigation bar-->
+        <nav id="navigation-bar">
+
+            <!--Menu bar and Youtube logo-->
+            <div id="menubar-and-youtubelogo-container">
+                <img src="images/menu-bar-icon.png" alt="Menu bar icon" id="menu-bar" width="70" height="50">
+                <img src="images/youtube-logo.PNG" alt="Youtube logo" id="navbar-youtube-logo" width="150" height="50"/>
+            </div>
+
+            <!--Search bar and search button-->
+            <div id="searchbar-and-button-container">
+                <form action="" method="get" name="form-1">
+                    <input type="search" name="search-bar" placeholder="Search" id="search-bar" size="100"/>
+                    <button id="search-button"><i class="material-icons" id="search-icon">&#xe8b6;</i></button>
+                </form>
+            </div>
+
+            <!--Upload icon and Sign In button-->
+            <div id="upload-and-signin-container">
+                <img src="images/upload.svg" alt="Upload Icon" id="upload-icon" width="50" height="30"/>
+                <a href="" id="sign-in-button">Sign In</a>
+            </div>
+        </nav>
+
+        <!--Choose language section-->
+        <section>
+            <img src="images/choose-language.PNG" alt="Choose Language" id="choose-language-image" width="1840" height="90"/>
+        </section>
+
+        <!--Main containers containing the first container (the video, video info, comments section)-->
+        <!-- and second container (the recommended videos)-->
+        <main>
+
+            <!--Main container 1-->
+            <div class="main-containers" id="main-container-1">
+microverse_project1
+
+                <!--Video section-->
+                <section>
+                    <iframe width="880" height="500" src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <!--Video info section (from the Title of video to Show more text-->
+                <section id="video-info-section">
+
+                    <!--Video title-->
+                    <div class="videotitle-and-info">
+                        <h3>Contributing to Open Source Part 1: The Easy Way</h3>
+
+
+                        <!--Youtuber avatar, youtuber name, subscribe button, number of subscribers, number of views-->
+                        <div id="youtubername-and-views">
+
+                            <!--Youtuber avatar, youtuber name, subscriber button and number of subscribers-->
+                            <div class="youtubername-and-views">
+                                <div class="youtuberavatar-and-subscribebutton">
+                                    <img src="images/youtuber-avatar.PNG" alt="Youtuber's avatar" id="youtuber-avatar" width="40" height="40"/>
+                                </div>
+
+                                <div class="youtuberavatar-and-subscribebutton" id="youtubername-and-subscribebutton">
+                                    <p id="youtuber-name">The Odin Project</p>
+                                    <button class="subscribebutton-and-number" id="subscribe-button">Subscribe</button>
+                                    <p class="subscribebutton-and-number" id="number-of-subscribers">799</p>
+                                </div>
+                            </div>
+microverse_project1
+
+                            <!--Number of views-->
+                            <div class="youtubername-and-views" id="number-of-views">
+                                <h4>50,016 views</h4>
+                            </div>
+                        </div>
+
+
+                        <!--Add to, save, more, like and dislike buttons-->
+                        <div>
+
+                            <!--Add to, save, more button-->
+                            <div class="videoinfo-container-buttons" id="left-video-buttons">
+                                <button id="add-to-button">
+                                    <img src="images/add-to-button.PNG" alt="Add to button" width="30" height="25">
+                                </button>
+                                <button id="save-to-button"><i class="material-icons">&#xe03b;</i>Save</button>
+                                <button id="more-button"><i class="material-icons">&#xe5d3;</i>More</button>
+                            </div>
+
+                            <!--Like and dislike buttons-->
+                            <div class="videoinfo-container-buttons" id="right-video-buttons">
+                                <button class="like-dislike-button" id="like-button"><i class="material-icons" >&#xe8dc;</i>359</button>
+                                <button class="like-dislike-button" id="dislike-button"><i class="material-icons">&#xe8db;</i>14</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Video information/paragraph-->
+                    <div class="videotitle-and-info">
+                        <h4>Published on Feb 27, 2014</h4>
+                        <p class="video-info videoinfo-container">How do you contibute to open source? In this video, I'll describe the easiest way to make a simple
+                            <span class="video-info videoinfo-container">contibution to an open source project -- without using the command line, a text editor, "forking a repo". or</span>
+                            <span class="video-info videoinfo-container">even touching Git outside of Github. I'll also describe what kinds of contributions open source software</span>
+                            <span class="video-info videoinfo-container">projects are typically looking for. As an example, I use submitting a student solution to a web development</span>
+                            <span class="video-info videoinfo-container">exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.</span>
+                            <span class="video-info videoinfo-container">You can find more information about that project at http://theodinproject.com.</span>
+                        </p>
+
+                        <p class="videoinfo-container" id="showmore-1">SHOW MORE</p>
+                    </div>
+                </section>
+
+                <!--Number of comments and sort by icon-->
+                <section>
+                    <p id="number-of-comments">15 Comments</p>
+                </section>
+
+                <!--Commenter avatar and textbox for writing a comment-->
+                <section id="numberofcomments-and-postingacomment">
+                    <form action="" method="get" name="form-2">
+                        <img src="images/user-avatar.PNG" alt="User's avatar" id="user-avatar" width="25" height="25"/>
+                        <textarea placeholder="Add a public comment..." rows="3" cols="100"></textarea>
+                        <input type="button" name="post-comment-button" value="Post" id="post-comment-button"/>
+                    </form>
+                </section>
+
+                <!--Comments section which shows that it is loading-->
+                <section class="videotitle-and-info">
+
+                     <!--Loading comments section; code is from the source page: http://archive.vn/Bss88-->
+                     <div style="font-size:100%;background-color: transparent; text-align:center;line-height:20px;white-space:nowrap;border-width: 0px; border-style: none; margin: 0px; padding: 1em; border-color: white; " >
+                        <span title="Loading icon" style="font-size:100%;background-image:url('data:image/gif;base64,R0lGODlhFAAUAJEDAMzMzLOzs39/f////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgADACwAAAAAFAAUAAACPJyPqcuNItyCUJoQBo0ANIxpXOctYHaQpYkiHfM2cUrCNT0nqr4uudsz/IC5na/2Mh4Hu+HR6YBaplRDAQAh+QQFCgADACwEAAIADAAGAAACFpwdcYupC8BwSogR46xWZHl0l8ZYQwEAIfkEBQoAAwAsCAACAAoACgAAAhccMKl2uHxGCCvO+eTNmishcCCYjWEZFgAh+QQFCgADACwMAAQABgAMAAACFxwweaebhl4K4VE6r61DiOd5SfiN5VAAACH5BAUKAAMALAgACAAKAAoAAAIYnD8AeKqcHIwwhGntEWLkO3CcB4biNEIFACH5BAUKAAMALAQADAAMAAYAAAIWnDSpAHa4GHgohCHbGdbipnBdSHphAQAh+QQFCgADACwCAAgACgAKAAACF5w0qXa4fF6KUoVQ75UaA7Bs3yeNYAkWACH5BAUKAAMALAIABAAGAAwAAAIXnCU2iMfaRghqTmMp1moAoHyfIYIkWAAAOw==');background-color: transparent; width:20px;height:20px;vertical-align:middle;display:inline-block;background-position: 50% 50%; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                        </span>
+                        <span style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                            Loading...
+                        </span>
+                    </div>
+                </section>
+            </div>
+
+            <!--Main container 2-->
+            <div class="main-containers" id="main-container-2">
+                <aside>
+
+                    <!--Up next text and Autoplay button-->
+                    <div id="upnext-and-autoplayimage">
+                        <p style="font-size:1.5rem;" class="upnext-and-autoplay" id="up-next">Up Next</p>
+                        <img src="images/autoplay-button.PNG" class="upload-and-autoplay" id="autoplay" alt="Autoplay image" width="250" height="40"/>
+                    </div>
+
+                    <!----------------Recommended videos---------------->
+
+                    <!--Recommended video 1-->
+                    <div>
+                        <img src="images/thumbnail-1.PNG" alt="Thumbnail 1" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Contributing to Open Source Part II: The Real Way</h4>
+                            <p class="recommendedvideos-text user-names">The Odin Project</p>
+                            <p class="recommendedvideos-text recommendedvideos-views"> 29,985 views </p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 2-->
+                    <div>
+                        <img src="images/thumbnail-2.PNG" alt="Thumbnail 2" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">'How to Get A Job at the Big 4 - Amazon, Facebook, Google &amp; Mcrosoft' by</h4>
+                            <p class="recommendedvideos-text user-names">imtiana</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">981,543 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 3-->
+                    <div>
+                        <img src="images/thumbnail-3.PNG" alt="Thumbnail 3" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Programming in Visual Basic .NET How to Connect Access Database to </h4>
+                            <p class="recommendedvideos-text user-names">iBasskung</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">16,130,993 views</p>
+                        </div>
+                    </div>
+microverse_project1
+
+                    <!--Recommended video 4-->
+                    <div>
+                        <img src="images/thumbnail-4.PNG" alt="Thumbnail 4" class="recommended-videos" width="240" height="150"/>
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Why Microsoft Paid $7.5B for the Future of Software! = A Case</h4>
+                            <p class="recommendedvideos-text user-names">Valuetainment</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">444,634 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 5-->
+                    <div>
+                        <img src="images/thumbnail-5.PNG" alt="Thumbnail 5" class="recommended-videos" width="240" height="150"/>
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">How to create a 3D Terrain with Google Maps and height maps in Photoshop</h4>
+                            <p class="recommendedvideos-text user-names">Orange Box Ceo</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">6,269,391 views</p>
+                        </p>
+                    </div>
+
+                    <!--Recommended video 6-->
+                    <div>
+                        <img src="images/thumbnail-6.PNG" alt="Thumbnail 6" class="recommended-videos" width="240" height="150"/>
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Convolutional Neural Networks (CNNs) explained</h4>
+                            <p class="recommendedvideos-text user-names">deeplizard</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">239,752 views</p>
+                            </p>
+                    </div>
+
+                    <!--Recommended video 7-->
+                    <div>
+                        <img src="images/thumbnail-7.PNG" alt="Thumbnail 7" class="recommended-videos" width="240" height="150"/>
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Top 10 Linux Job interview Questions</h4>
+                            <p class="recommendedvideos-text user-names">tutorialLinux</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">1,236,003 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 8-->
+                    <div>
+                        <img src="images/thumbnail-8.PNG" alt="Thumbnail 8" class="recommended-videos" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Running an SQL Injection Attack - Computerphile</h4>
+                            <p class="recommendedvideos-text user-names">Computerphile</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">2,217,477 views</p>
+                    </div>
+
+                    <!--Recommended video 9-->
+                    <div>
+                        <img src="images/thumbnail-9.PNG" alt="Thumbnail 9" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">How to prepare for product based companies? </h4>
+                            <p class="recommendedvideos-text user-names">Gate Lecture by Ravindrababu Ra</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">291,215 views</p>
+                    </div>
+
+                    <!--Recommended video 10-->
+                    <div>
+                        <img src="images/thumbnail-10.PNG" alt="Thumbnail 10" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Visual Basic .Net : Search in Access Database - DataGridView </h4>
+                            <p class="recommendedvideos-text user-names">iBasskung</p>
+                  microverse_project1
+          <p class="recommendedvideos-text recommendedvideos-views">6,047,577 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 11-->
+                    <!---
+                    <div>
+                        <img src="images/thumbnail-11.PNG" alt="Thumbnail 11" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos">
+                            <p class="recommendedvideos-text">How to Convert pdf to word without software</p>
+                  microverse_project1
+          <p class="recommendedvideos-text">karim hamdadi</p>
+                            <p class="recommendedvideos-text">12,275,519 views</p>
+                        <div>
+                    </div>-->
+
+                    <!--Recommended video 12-->
+                    <div>
+                        <img src="images/thumbnail-12.PNG" alt="Thumbnail 12" class="recommended-videos" width="240" height="150" />
+
+                       <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">What Python Projects Should I Build to Get a Job?</h4>
+                            <p class="recommendedvideos-text user-names">Real Python</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">169,155 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 13-->
+                    <div>
+                        <img src="images/thumbnail-13.PNG" alt="Thumbnail 13" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">How To NOT Look Like A Tourist | What To Wear In Europe</h4>
+                            <p class="recommendedvideos-text user-names">Audrey Coyne</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">3,432,133 views</p>
+                    </div>
+
+                    <!--Recommended video 14-->
+                    <div>
+                        <img src="images/thumbnail-14.PNG" alt="Thumbnail 14" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Your First GitHub pull Request (in 10 Mins)</h4>
+                            <p class="recommendedvideos-text user-names">Jackson Bates</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">31,930 views</p>
+                        </div>
+                    </div>
+microverse_project1
+
+                    <!--Recommended video 15-->
+                    <div>
+                        <img src="images/thumbnail-15.PNG" alt="Thumbnail 15" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Top signs of an inexperiences programmer</h4>
+                            <p class="recommendedvideos-text user-names">TechLead</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">928,523 views</p>
+                    </div>
+
+                    <!--Recommended video 16-->
+                    <div>
+                        <img src="images/thumbnail-16.PNG" alt="Thumbnail 16" class="recommended-videos" width="240" height="150"/>
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Why I left my job at Google (as a software engineer)</h4>
+                            <p class="recommendedvideos-text user-names">TechLead</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">1,684,582 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 17-->
+                    <div>
+                        <img src="images/thumbnail-17.PNG" alt="Thumbnail 17" class="recommended-videos" width="240" height="150"/>
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Max Stoiber - I want you to contribute to open source</h4>
+                            <p class="recommendedvideos-text user-names">ReactRally</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">3,134 views</p>
+                        </div>
+                    </div>
+
+
+                    <!--Recommended video 18-->
+                    <div>
+                        <img src="images/thumbnail-18.PNG" alt="Thumbnail 18" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">How to Learn Anything Fast - Josh Kaufman</h4>
+              microverse_project1
+              <p class="recommendedvideos-text user-names">The RSA</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">3,157,647 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 19-->
+                    <div>
+                        <img src="images/thumbnail-19.PNG" alt="Thumbnail 19" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos rec-vid-text">
+                            <h4 class="recommendedvideos-text video-titles">Git &amp; GitHub: Pull requests (10/11) </h4>
+                            <p class="recommendedvideos-text user-names">Codecourse</p>
+                            <p class="recommendedvideos-text recommendedvideos-views">78,624 views</p>
+                        </div>
+                    </div>
+
+                    <!--Recommended video 20 -->
+                    <!---
+                    <div>
+                        <img src="images/thumbnail-20.PNG" alt="Thumbnail 20" class="recommended-videos" width="240" height="150" />
+
+                        <div class="recommended-videos">
+                            <p class="recommendedvideos-text">Git &amp; GitHub: Pull requests (10/11)</p>
+                            <p class="recommendedvideos-text">Codecourse</p>
+                            <p class="recommendedvideos-text">78,624 views</p>
+                        </div>
+                    </div>-->
+                </aside>
+            </div>
+        </main>
+
+        <!--Footer of the webpage-->
+        <footer>
+            <div>
+                <img src="images/youtube-logo.PNG" alt="youtube-logo" class="footer-container-1" id="youtube-logo-footer" width="130" height="50"/>
+                <form action="" method="get" name="form-3" class="footer-container-1">
+                    <select class="footer-buttons">
+                        <i class="material-icons"></i>
+                            <option value="English">English</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                        <i class="material-icons">&#xe5c5;</i>
+                    </select>
+                </form>
+
+                <form action="" method="get"name="form-4" class="footer-container-1">
+                    <select class="footer-buttons">
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Europe">Europe</option>
+                        <i class="material-icons">&#xe5c5;</i>
+                    </select>
+                </form>
+
+                <form action="" method="get" name="form-5" class="footer-container-1">
+                    <select class="footer-buttons">
+                        <option value="Restricted Mode off">Restricted Mode: Off</option>
+                        <option value="Restricted Mode on">Restricted Mode: On</option>
+                    </select>
+                </form>
+                <button type="button" class="footer-container-1 footer-buttons">
+                    <i class="material-icons history-and-help-icons" id="history-icon">&#xe88c;</i>
+                    History
+                </button>
+                <button type="button" class="footer-container-1 footer-buttons">
+                    <i class="material-icons history-and-help-icons" id="help-icon">&#xe8fd;</i>
+                    Help
+                </button>
+            </div>
+
+            <div>
+                <div>
+                    <a href="" class="footer-links-top">About</a>
+                    <a href="" class="footer-links-top">Press</a>
+                    <a href="" class="footer-links-top">Copyright</a>
+                    <a href="" class="footer-links-top">Creators</a>
+                    <a href="" class="footer-links-top">Advertise</a>
+                    <a href="" class="footer-links-top">Developers</a>
+                </div>
+                <div>
+                    <a href="" class="footer-links-bottom">Terms</a>
+                    <a href="" class="footer-links-bottom">Privacy</a>
+                    <a href="" class="footer-links-bottom">Policy & Safety</a>
+                    <a href="" class="footer-links-bottom">Test new features</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
